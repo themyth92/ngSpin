@@ -1,5 +1,5 @@
 (function(angular){
   'use strict';
   angular
-    .module('app', ['ngSpin.rotPlane']);
+    .module('app', ['ngSpin']);
 })(angular);

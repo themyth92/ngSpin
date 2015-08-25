@@ -12,7 +12,7 @@
           var width = attrs.spinWidth || 30;
           var height = attrs.spinHeight || 30;
           var speed = attrs.spinSpeed || 1.2;
-          var color = attrs.spinColor || 'ffffff';
+          var color = attrs.spinColor || '333';
 
           // change css style 
           elem.css({
@@ -23,6 +23,6 @@
             'background-color' : '#' + color
           });
         } 
-      }
+      };
     });
 })(angular);

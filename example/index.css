@@ -70,3 +70,11 @@ pre, code {
   right: 3px;
   padding: 5px 8px;
 }
+
+/**
+ * Fix spinkit problems
+ */
+.sk-spinner.sk-spinner-wandering-cubes {
+  width : 60px;
+  height : 60px;
+}
