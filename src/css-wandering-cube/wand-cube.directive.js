@@ -10,8 +10,8 @@
                     '<div class="sk-cube2"></div>',
                     '</div>'].join(''),
         link : function link(scope, elem, attrs) {
-          var width = attrs.spinCubeWidth || 10;
-          var height = attrs.spinCubeHeight || 10;
+          var width = attrs.spinWidth || 10;
+          var height = attrs.spinHeight || 10;
           var color = attrs.spinColor || '333';
           var cubeElem = elem.find('div');
 
