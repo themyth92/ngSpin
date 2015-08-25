@@ -1,1 +1,80 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+
+    <!-- spinkit -->
+    <link rel = 'stylesheet' href = '../libs/spinkit/spinkit.css'>
+    <link rel = 'stylesheet' href = 'index.css'>
+
+    <script type = 'text/javascript' src = 'https://code.jquery.com/jquery-1.11.3.min.js'></script>
+    <script type = 'text/javascript' src = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    <script type = 'text/javascript' src = 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js'></script>
+    <script type = 'text/javascript' src = '../src/css-rotating-plane/rot-plane.directive.js'></script>
+    <script type = 'text/javascript' src = 'index.js'></script>
+  </head>
+  <body ng-app = 'app' class = 'full'>
+
+    <!-- content -->
+    <div class = 'wrapper'>
+      <div class = 'items' data-toggle = 'modal' data-target = '#rot-plane-mdl'>
+        <rot-plane spin-width = '50' spin-height = '50' spin-speed = '1.5' spin-color = 'ffffff'></rot-plane>
+      </div>
+      <div class = 'items'>
+        <rot-plane spin-width = '50' spin-height = '50' spin-speed = '1.5' spin-color = 'ffffff'></rot-plane>
+      </div>
+      <div class = 'items'>
+        <rot-plane spin-width = '50' spin-height = '50' spin-speed = '1.5' spin-color = 'ffffff'></rot-plane>
+      </div>
+      <div class = 'items'>
+        <rot-plane spin-width = '50' spin-height = '50' spin-speed = '1.5' spin-color = 'ffffff'></rot-plane>
+      </div>
+    </div>
+
+    <!-- fork -->
+    <div class="github-fork-ribbon-wrapper right-bottom">
+      <div class="github-fork-ribbon">
+        <a href="https://github.com/themyth92/ngSpin">Fork me on GitHub</a>
+      </div>
+    </div>        
+
+    <!-- modal -->
+    <!-- rotating plane -->
+    <div class = 'modal fade' id = 'rot-plane-mdl' tabindex = '-1' role = 'dialog'>
+      <div class = 'modal-dialog' role = 'document'>
+        <div class = 'modal-content'>
+          <div class = 'modal-body'>
+            <div class = 'code-block code-html'>
+              <pre>
+                &lt;div ng-app = 'app'&gt;
+                  &nbsp;&lt;rot-plane 
+                  &nbsp;&nbsp;spin-width = '50' 
+                  &nbsp;&nbsp;spin-height = '50' 
+                  &nbsp;&nbsp;spin-speed = '1.5' 
+                  &nbsp;&nbsp;spin-color = 'ffffff'&gt;
+                  &nbsp;&lt;/rot-plane&gt;
+                &lt;/div&gt;
+              </pre>
+              <div class = 'lang-label label label-default'>HTML</div>
+            </div>
+            <div class = 'code-block'>
+              <div>
+                <code>angular.module('app', ['ngSpin.rotPlane']);</code>
+                <div class = 'lang-label label label-default'>JS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / rotating plane -->
+  </body>
+</html>
