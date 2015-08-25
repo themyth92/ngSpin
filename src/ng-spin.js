@@ -4,6 +4,8 @@
     'ngSpin.rotPlane', 
     'ngSpin.dBounce',
     'ngSpin.wave',
-    'ngSpin.wandCube'
+    'ngSpin.wandCube',
+    'ngSpin.pulse',
+    'ngSpin.chaseDot'
   ]);
 })(angular);

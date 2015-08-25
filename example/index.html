@@ -18,26 +18,43 @@
     <script type = 'text/javascript' src = 'https://code.jquery.com/jquery-1.11.3.min.js'></script>
     <script type = 'text/javascript' src = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
     <script type = 'text/javascript' src = 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js'></script>
-    <script type = 'text/javascript' src = '../build/ngSpin.min.js'></script>
+    <script type = 'text/javascript' src = '../src/css-double-bounce/d-bounce.directive.js'></script>
+    <script type = 'text/javascript' src = '../src/css-rotating-plane/rot-plane.directive.js'></script>
+    <script type = 'text/javascript' src = '../src/css-wandering-cube/wand-cube.directive.js'></script>
+    <script type = 'text/javascript' src = '../src/css-wave/wave.directive.js'></script>
+    <script type = 'text/javascript' src = '../src/css-pulse/pulse.directive.js'></script>
+    <script type = 'text/javascript' src = '../src/css-chasing-dot/chase-dot.directive.js'></script>
+    <script type = 'text/javascript' src = '../src/ng-spin.js'></script>
     <script type = 'text/javascript' src = 'index.js'></script>
   </head>
   <body ng-app = 'app' class = 'full'>
 
     <!-- content -->
     <div class = 'wrapper'>
-      <div class = 'items' data-toggle = 'modal' data-target = '#rot-plane-mdl'>
-        <rot-plane spin-width = '50' spin-height = '50' spin-speed = '1.5' spin-color = 'ffffff'></rot-plane>
+      <div class = 'item-block'>
+        <div class = 'items' data-toggle = 'modal' data-target = '#rot-plane-mdl'>
+          <rot-plane spin-width = '50' spin-height = '50' spin-speed = '1.5' spin-color = 'ffffff'></rot-plane>
+        </div>
+        <div class = 'items' data-toggle = 'modal' data-target = '#d-bounce-mdl'>
+          <d-bounce spin-radius = '30' spin-color = 'ffffff' spin-speed = '2'></d-bounce>
+        </div>
+        <div class = 'items' data-toggle = 'modal' data-target = '#wave-mdl'>
+          <wave spin-width = '7' spin-height = '60' spin-color = 'ffffff' spin-margin = '2'></wave>
+        </div>
+        <div class = 'items' data-toggle = 'modal' data-target = '#wand-cube-mdl'>
+          <wand-cube spin-width = '16' spin-height = '16' spin-color = 'ffffff'></wand-cube>
+        </div>
       </div>
-      <div class = 'items' data-toggle = 'modal' data-target = '#d-bounce-mdl'>
-        <d-bounce spin-radius = '30' spin-color = 'ffffff' spin-speed = '2'></d-bounce>
-      </div>
-      <div class = 'items' data-toggle = 'modal' data-target = '#wave-mdl'>
-        <wave spin-width = '7' spin-height = '60' spin-color = 'ffffff' spin-margin = '2'></wave>
-      </div>
-      <div class = 'items' data-toggle = 'modal' data-target = '#wand-cube-mdl'>
-        <wand-cube spin-width = '16' spin-height = '16' spin-color = 'ffffff'></wand-cube>
+      <div class = 'item-block'>
+        <div class = 'items' data-toggle = 'modal' data-target = '#pulse-mdl'>
+          <pulse spin-radius = '30' spin-speed = '1.5' spin-color = 'ffffff'></pulse>
+        </div>
+        <div class = 'items' data-toggle = 'modal' data-target = '#chase-dot-mdl'>
+          <chase-dot spin-radius = '30' spin-speed = '1.5' spin-color = 'ffffff'></chase-dot>
+        </div>
       </div>
     </div>
+    
 
     <!-- fork -->
     <div class="github-fork-ribbon-wrapper right-bottom">
@@ -145,8 +162,8 @@
               <pre>
                 &lt;div ng-app = 'app'&gt;
                   &nbsp;&lt;wand-cube 
-                  &nbsp;&nbsp;spin-cube-width = '16' 
-                  &nbsp;&nbsp;spin-cube-height = '16' 
+                  &nbsp;&nbsp;spin-width = '16' 
+                  &nbsp;&nbsp;spin-height = '16' 
                   &nbsp;&nbsp;spin-color = 'ffffff'&gt;
                   &nbsp;&lt;/wand-cube&gt;
                 &lt;/div&gt;
@@ -164,5 +181,63 @@
       </div>
     </div>
     <!-- / wandering cube -->
+
+    <!-- pulse -->
+    <div class = 'modal fade' id = 'pulse-mdl' tabindex = '-1' role = 'dialog'>
+      <div class = 'modal-dialog' role = 'document'>
+        <div class = 'modal-content'>
+          <div class = 'modal-body'>
+            <div class = 'code-block code-html'>
+              <pre>
+                &lt;div ng-app = 'app'&gt;
+                  &nbsp;&lt;pulse 
+                  &nbsp;&nbsp;spin-radius = '30' 
+                  &nbsp;&nbsp;spin-speed = '1.5' 
+                  &nbsp;&nbsp;spin-color = 'ffffff'&gt;
+                  &nbsp;&lt;/pulse&gt;
+                &lt;/div&gt;
+              </pre>
+              <div class = 'lang-label label label-default'>HTML</div>
+            </div>
+            <div class = 'code-block'>
+              <div>
+                <code>angular.module('app', ['ngSpin.pulse']);</code>
+                <div class = 'lang-label label label-default'>JS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / pulse -->
+
+    <!-- chasing dot -->
+    <div class = 'modal fade' id = 'chase-dot-mdl' tabindex = '-1' role = 'dialog'>
+      <div class = 'modal-dialog' role = 'document'>
+        <div class = 'modal-content'>
+          <div class = 'modal-body'>
+            <div class = 'code-block code-html'>
+              <pre>
+                &lt;div ng-app = 'app'&gt;
+                  &nbsp;&lt;chase-dot 
+                  &nbsp;&nbsp;spin-radius = '30' 
+                  &nbsp;&nbsp;spin-speed = '1.5' 
+                  &nbsp;&nbsp;spin-color = 'ffffff'&gt;
+                  &nbsp;&lt;/chase-dot&gt;
+                &lt;/div&gt;
+              </pre>
+              <div class = 'lang-label label label-default'>HTML</div>
+            </div>
+            <div class = 'code-block'>
+              <div>
+                <code>angular.module('app', ['ngSpin.chaseDot']);</code>
+                <div class = 'lang-label label label-default'>JS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / chasing dot -->
   </body>
 </html>

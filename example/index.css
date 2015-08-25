@@ -23,20 +23,28 @@
   cursor: pointer;
 }
 
-.items:nth-child(1) {
+.item-block:nth-child(1) .items:nth-child(1) {
   background-color: #1abc9c;
 }
 
-.items:nth-child(2) {
+.item-block:nth-child(1) .items:nth-child(2) {
   background-color: #2ecc71;
 }
 
-.items:nth-child(3) {
+.item-block:nth-child(1) .items:nth-child(3) {
   background-color: #4aa3df;
 }
 
-.items:nth-child(4) {
+.item-block:nth-child(1) .items:nth-child(4) {
   background-color: #9b59b6;
+}
+
+.item-block:nth-child(2) .items:nth-child(1) {
+  background-color: #28b362;
+}
+
+.item-block:nth-child(2) .items:nth-child(2) {
+  background-color: #18af92;
 }
 
 .wrapper .items div {
