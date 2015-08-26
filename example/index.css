@@ -47,6 +47,10 @@
   background-color: #18af92;
 }
 
+.item-block:nth-child(2) .items:nth-child(3) {
+  background-color: #2980b9;
+}
+
 .wrapper .items div {
   display: inline-block;
 }
