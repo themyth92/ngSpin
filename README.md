@@ -38,24 +38,24 @@
 ## Configuration
 
 ### Directive list
-```html
-	<!-- spinkit rotating plane-->
-	<sk-rot-plane></sk-rot-plane>
+ ```html
+ <!-- spinkit rotating plane-->
+ <sk-rot-plane></sk-rot-plane>
 
-	<!-- spinkit double bouncing -->
-	<sk-d-bounce</sk-d-bounce>
+ <!-- spinkit double bouncing -->
+ <sk-d-bounce</sk-d-bounce>
 	
-	<!-- spinkit wave -->
-	<sk-wave></sk-wave>
+ <!-- spinkit wave -->
+ <sk-wave></sk-wave>
 	
-	<!-- spinkit wandering cube -->
-	<sk-wand-cube></sk-wand-cube>
+ <!-- spinkit wandering cube -->
+ <sk-wand-cube></sk-wand-cube>
 
-  <!-- spinkit pulse -->
-  <sk-pulse></sk-pulse>
+ <!-- spinkit pulse -->
+ <sk-pulse></sk-pulse>
 
-  <!-- spinkit chasing dot -->
-  <sk-chase-dot></sk-chase-dot>
+ <!-- spinkit chasing dot -->
+ <sk-chase-dot></sk-chase-dot>
 ```
 
 ### Optional attributes 
@@ -102,6 +102,7 @@
  spin-color | Hex String | # **333** | Circle lightest color
 
 6. Spinkit chasing dot
+
  Attributes | Type | Default | Description
  -----------|----------|---------|------------
  spin-radius | Number | **20** px | Radius of the circle that 2 circles spinning arround 
