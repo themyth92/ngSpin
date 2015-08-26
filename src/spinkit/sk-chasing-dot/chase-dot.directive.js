@@ -1,7 +1,7 @@
 (function(angular) {
   'use strict';
-  angular.module('ngSpin.chaseDot', [])
-    .directive('chaseDot', function directive() {
+  angular.module('ngSpin.skChaseDot', [])
+    .directive('skChaseDot', function directive() {
       return {
         restrict : 'AE',
         replace : true,

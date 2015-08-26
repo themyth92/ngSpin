@@ -1,7 +1,7 @@
 (function(angular) {
   'use strict';
-  angular.module('ngSpin.rotPlane', [])
-    .directive('rotPlane', function directive() {
+  angular.module('ngSpin.skRotPlane', [])
+    .directive('skRotPlane', function directive() {
       return {
         restrict : 'AE',
         replace : true,

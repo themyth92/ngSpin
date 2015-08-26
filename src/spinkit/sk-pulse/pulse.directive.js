@@ -1,7 +1,7 @@
 (function(angular) {
   'use strict';
-  angular.module('ngSpin.pulse', [])
-    .directive('pulse', function directive() {
+  angular.module('ngSpin.skPulse', [])
+    .directive('skPulse', function directive() {
       return {
         restrict : 'AE',
         replace : true,

@@ -19,7 +19,7 @@
 3.  Include stylesheet
 	
  ```html
- <link rel = 'stylesheet' href = 'build/spinkit.min.css'>
+  <link rel = 'stylesheet' href = 'build/spinkit.min.css'>
   ```
  
 4. Include scripts
@@ -32,7 +32,7 @@
 5. Add `ngSpin` module dependancy
 
  ```javascript
- angular.module('yourModule', ['ngSpin']);
+  angular.module('yourModule', ['ngSpin']);
  ```
 
 ## Configuration
@@ -40,16 +40,22 @@
 ### Directive list
 ```html
 	<!-- spinkit rotating plane-->
-	<rot-plane></rot-plane>
+	<sk-rot-plane></sk-rot-plane>
 
 	<!-- spinkit double bouncing -->
-	<d-bounce</d-bounce>
+	<sk-d-bounce</sk-d-bounce>
 	
 	<!-- spinkit wave -->
-	<wave></wave>
+	<sk-wave></sk-wave>
 	
 	<!-- spinkit wandering cube -->
-	<wand-cube></wand-cube>
+	<sk-wand-cube></sk-wand-cube>
+
+  <!-- spinkit pulse -->
+  <sk-pulse></sk-pulse>
+
+  <!-- spinkit chasing dot -->
+  <sk-chase-dot></sk-chase-dot>
 ```
 
 ### Optional attributes 
@@ -87,10 +93,25 @@
  spin-height | Number | **10** px | Each cube height
  spin-color | Hex String | # **333** | Cube color
 
+5. Spinkit pulse
+
+ Attributes | Type | Default | Description
+ -----------|----------|---------|------------
+ spin-radius | Number | **20** px | Biggest circle radius
+ spin-speed | Number | **1** s | Duration of the circle from its smallest to biggest size. Lower is faster
+ spin-color | Hex String | # **333** | Circle lightest color
+
+6. Spinkit chasing dot
+ Attributes | Type | Default | Description
+ -----------|----------|---------|------------
+ spin-radius | Number | **20** px | Radius of the circle that 2 circles spinning arround 
+ spin-speed | Number | **2** s | Circle spin speed. Lower is faster
+ spin-color | Hex String | # **333** | Each circle color
+
 ### Example usage
 ```html
   <!-- spinkit rotating plane-->
-  <rot-plane spin-width = '50' spin-height = '50' spin-speed = '1.5' spin-color = 'ffffff'></rot-plane>
+  <sk-rot-plane spin-width = '50' spin-height = '50' spin-speed = '1.5' spin-color = 'ffffff'></sk-rot-plane>
 ```
 
 ## License
@@ -103,4 +124,4 @@ MIT
  * [Sam Herbert SVG Loader](http://samherbert.net/svg-loaders/)
 
 ## Notice 
-This project currently in progress ...
+This project is currently in progress ...

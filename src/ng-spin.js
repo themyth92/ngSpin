@@ -1,11 +1,11 @@
 (function(angular) {
   'use strict';
   angular.module('ngSpin', [
-    'ngSpin.rotPlane', 
-    'ngSpin.dBounce',
-    'ngSpin.wave',
-    'ngSpin.wandCube',
-    'ngSpin.pulse',
-    'ngSpin.chaseDot'
+    'ngSpin.skRotPlane', 
+    'ngSpin.skDBounce',
+    'ngSpin.skWave',
+    'ngSpin.skWandCube',
+    'ngSpin.skPulse',
+    'ngSpin.skChaseDot'
   ]);
 })(angular);

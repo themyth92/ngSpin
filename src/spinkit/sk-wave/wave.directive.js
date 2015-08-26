@@ -1,7 +1,7 @@
 (function(angular) {
   'use strict';
-  angular.module('ngSpin.wave', [])
-    .directive('wave', function directive() {
+  angular.module('ngSpin.skWave', [])
+    .directive('skWave', function directive() {
       return {
         restrict : 'AE',
         replace : true,

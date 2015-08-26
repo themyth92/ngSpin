@@ -1,7 +1,7 @@
 (function(angular) {
   'use strict';
-  angular.module('ngSpin.dBounce', [])
-    .directive('dBounce', function directive() {
+  angular.module('ngSpin.skDBounce', [])
+    .directive('skDBounce', function directive() {
       return {
         restrict : 'AE',
         replace : true,

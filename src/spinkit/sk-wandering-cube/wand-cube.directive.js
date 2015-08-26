@@ -1,7 +1,7 @@
 (function(angular) {
   'use strict';
-  angular.module('ngSpin.wandCube', [])
-    .directive('wandCube', function directive() {
+  angular.module('ngSpin.skWandCube', [])
+    .directive('skWandCube', function directive() {
       return {
         restrict : 'AE',
         replace : true,
