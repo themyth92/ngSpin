@@ -24,6 +24,7 @@
     <script type = 'text/javascript' src = '../src/spinkit/sk-wave/wave.directive.js'></script>
     <script type = 'text/javascript' src = '../src/spinkit/sk-pulse/pulse.directive.js'></script>
     <script type = 'text/javascript' src = '../src/spinkit/sk-chasing-dot/chase-dot.directive.js'></script>
+    <script type = 'text/javascript' src = '../src/spinkit/sk-three-bounce/t-bounce.directive.js'></script>
     <script type = 'text/javascript' src = '../src/ng-spin.js'></script>
     <script type = 'text/javascript' src = 'index.js'></script>
   </head>
@@ -51,6 +52,9 @@
         </div>
         <div class = 'items' data-toggle = 'modal' data-target = '#sk-chase-dot-mdl'>
           <sk-chase-dot spin-radius = '30' spin-speed = '1.5' spin-color = 'ffffff'></sk-chase-dot>
+        </div>
+        <div class = 'items' data-toggle = 'modal' data-target = '#sk-t-bounce-mdl'>
+          <sk-t-bounce spin-radius = '10' spin-speed = '1.5' spin-bound-width = '80' spin-color = 'ffffff'></sk-t-bounce>
         </div>
       </div>
     </div>
@@ -231,6 +235,36 @@
             <div class = 'code-block'>
               <div>
                 <code>angular.module('app', ['ngSpin.skChaseDot']);</code>
+                <div class = 'lang-label label label-default'>JS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / chasing dot -->
+
+    <!-- three bounce -->
+    <div class = 'modal fade' id = 'sk-t-bounce-mdl' tabindex = '-1' role = 'dialog'>
+      <div class = 'modal-dialog' role = 'document'>
+        <div class = 'modal-content'>
+          <div class = 'modal-body'>
+            <div class = 'code-block code-html'>
+              <pre>
+                &lt;div ng-app = 'app'&gt;
+                  &nbsp;&lt;sk-t-bounce 
+                  &nbsp;&nbsp;spin-radius = '10' 
+                  &nbsp;&nbsp;spin-speed = '1.5' 
+                  &nbsp;&nbsp;spin-bound-width = '80' 
+                  &nbsp;&nbsp;spin-color = 'ffffff'&gt;
+                  &nbsp;&lt;/sk-t-bounce&gt;
+                &lt;/div&gt;
+              </pre>
+              <div class = 'lang-label label label-default'>HTML</div>
+            </div>
+            <div class = 'code-block'>
+              <div>
+                <code>angular.module('app', ['ngSpin.skTBounce']);</code>
                 <div class = 'lang-label label label-default'>JS</div>
               </div>
             </div>

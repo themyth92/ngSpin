@@ -27,8 +27,7 @@
           skDoubleBounce1Elem.css({
             'background-color' : '#' + color,
             '-webkit-animation' : 'sk-doubleBounce ' + speed + 's infinite ease-in-out',
-            'animation' : 'sk-doubleBounce ' + speed + 's infinite ease-in-out',
-
+            'animation' : 'sk-doubleBounce ' + speed + 's infinite ease-in-out'
           });
 
           skDoubleBounce2Elem.css({

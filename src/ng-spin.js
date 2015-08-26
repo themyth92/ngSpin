@@ -6,6 +6,7 @@
     'ngSpin.skWave',
     'ngSpin.skWandCube',
     'ngSpin.skPulse',
-    'ngSpin.skChaseDot'
+    'ngSpin.skChaseDot',
+    'ngSpin.skTBounce'
   ]);
 })(angular);

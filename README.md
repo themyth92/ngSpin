@@ -56,6 +56,9 @@
 
  <!-- spinkit chasing dot -->
  <sk-chase-dot></sk-chase-dot>
+
+  <!-- spinkit three bounce -->
+  <sk-t-bounce></sk-t-bounce>
 ```
 
 ### Optional attributes 
@@ -107,6 +110,15 @@
  -----------|----------|---------|------------
  spin-radius | Number | **20** px | Radius of the circle that 2 circles spinning arround 
  spin-speed | Number | **2** s | Circle spin speed. Lower is faster
+ spin-color | Hex String | # **333** | Each circle color
+
+7. Spinkit three bounce
+
+ Attributes | Type | Default | Description
+ -----------|----------|---------|------------
+ spin-bound-width | Number | **70** px | Width of bounding box around the circle
+ spin-radius | Number | **9** px | Radius of each circle 
+ spin-speed | Number | **1.4** s | Duration of each circle between its biggest and smallest size
  spin-color | Hex String | # **333** | Each circle color
 
 ### Example usage
