@@ -51,6 +51,10 @@
   background-color: #2980b9;
 }
 
+.item-block:nth-child(2) .items:nth-child(4) {
+  background-color: #8e44ad;
+}
+
 .wrapper .items div {
   display: inline-block;
 }
@@ -89,4 +93,8 @@ pre, code {
 .sk-spinner.sk-spinner-wandering-cubes {
   width : 60px;
   height : 60px;
+}
+
+pre.prettyprint {
+  border: none !important;
 }

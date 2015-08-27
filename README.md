@@ -59,6 +59,9 @@
 
   <!-- spinkit three bounce -->
   <sk-t-bounce></sk-t-bounce>
+
+  <!-- spinkit circle -->
+  <sk-circle></sk-circle>
 ```
 
 ### Optional attributes 
@@ -120,6 +123,13 @@
  spin-radius | Number | **9** px | Radius of each circle 
  spin-speed | Number | **1.4** s | Duration of each circle between its biggest and smallest size
  spin-color | Hex String | # **333** | Each circle color
+
+8. Spinkit circle
+
+ Attributes | Type | Default | Description
+ -----------|----------|---------|------------
+ spin-bound-radius | Number | **70** px | Width of bounding box around the circle
+ spin-color | Hex String | # **333** | Each circle color. **NOTICE : This value should be modified using CSS style. Find *.sk-spinner-circle .sk-circle:before* selector inside spinkit css style and change background-color style** 
 
 ### Example usage
 ```html

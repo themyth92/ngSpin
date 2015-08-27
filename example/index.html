@@ -15,6 +15,7 @@
     <link rel = 'stylesheet' href = '../libs/spinkit/spinkit.css'>
     <link rel = 'stylesheet' href = 'index.css'>
 
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script type = 'text/javascript' src = 'https://code.jquery.com/jquery-1.11.3.min.js'></script>
     <script type = 'text/javascript' src = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
     <script type = 'text/javascript' src = 'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js'></script>
@@ -25,6 +26,7 @@
     <script type = 'text/javascript' src = '../src/spinkit/sk-pulse/pulse.directive.js'></script>
     <script type = 'text/javascript' src = '../src/spinkit/sk-chasing-dot/chase-dot.directive.js'></script>
     <script type = 'text/javascript' src = '../src/spinkit/sk-three-bounce/t-bounce.directive.js'></script>
+    <script type = 'text/javascript' src = '../src/spinkit/sk-circle/circle.directive.js'></script>
     <script type = 'text/javascript' src = '../src/ng-spin.js'></script>
     <script type = 'text/javascript' src = 'index.js'></script>
   </head>
@@ -56,6 +58,9 @@
         <div class = 'items' data-toggle = 'modal' data-target = '#sk-t-bounce-mdl'>
           <sk-t-bounce spin-radius = '10' spin-speed = '1.5' spin-bound-width = '80' spin-color = 'ffffff'></sk-t-bounce>
         </div>
+        <div class = 'items' data-toggle = 'modal' data-target = '#sk-circle-mdl'>
+          <sk-circle spin-bound-radius = '25' spin-color = 'ffffff'></sk-circle>
+        </div>
       </div>
     </div>
     
@@ -74,7 +79,7 @@
         <div class = 'modal-content'>
           <div class = 'modal-body'>
             <div class = 'code-block code-html'>
-              <pre>
+              <pre class = 'prettyprint'>
                 &lt;div ng-app = 'app'&gt;
                   &nbsp;&lt;sk-rot-plane 
                   &nbsp;&nbsp;spin-width = '50' 
@@ -88,7 +93,7 @@
             </div>
             <div class = 'code-block'>
               <div>
-                <code>angular.module('app', ['ngSpin.skRotPlane']);</code>
+                <code class = 'prettyprint'>angular.module('app', ['ngSpin.skRotPlane']);</code>
                 <div class = 'lang-label label label-default'>JS</div>
               </div>
             </div>
@@ -104,7 +109,7 @@
         <div class = 'modal-content'>
           <div class = 'modal-body'>
             <div class = 'code-block code-html'>
-              <pre>
+              <pre class = 'prettyprint'>
                 &lt;div ng-app = 'app'&gt;
                   &nbsp;&lt;sk-d-bounce 
                   &nbsp;&nbsp;spin-radius = '30' 
@@ -117,7 +122,7 @@
             </div>
             <div class = 'code-block'>
               <div>
-                <code>angular.module('app', ['ngSpin.skDBounce']);</code>
+                <code class = 'prettyprint'>angular.module('app', ['ngSpin.skDBounce']);</code>
                 <div class = 'lang-label label label-default'>JS</div>
               </div>
             </div>
@@ -133,7 +138,7 @@
         <div class = 'modal-content'>
           <div class = 'modal-body'>
             <div class = 'code-block code-html'>
-              <pre>
+              <pre class = 'prettyprint'>
                 &lt;div ng-app = 'app'&gt;
                   &nbsp;&lt;sk-wave 
                   &nbsp;&nbsp;spin-width = '7' 
@@ -147,7 +152,7 @@
             </div>
             <div class = 'code-block'>
               <div>
-                <code>angular.module('app', ['ngSpin.skWave']);</code>
+                <code class = 'prettyprint'>angular.module('app', ['ngSpin.skWave']);</code>
                 <div class = 'lang-label label label-default'>JS</div>
               </div>
             </div>
@@ -163,7 +168,7 @@
         <div class = 'modal-content'>
           <div class = 'modal-body'>
             <div class = 'code-block code-html'>
-              <pre>
+              <pre class = 'prettyprint'>
                 &lt;div ng-app = 'app'&gt;
                   &nbsp;&lt;sk-wand-cube 
                   &nbsp;&nbsp;spin-width = '16' 
@@ -176,7 +181,7 @@
             </div>
             <div class = 'code-block'>
               <div>
-                <code>angular.module('app', ['ngSpin.skWandCube']);</code>
+                <code class = 'prettyprint'>angular.module('app', ['ngSpin.skWandCube']);</code>
                 <div class = 'lang-label label label-default'>JS</div>
               </div>
             </div>
@@ -192,7 +197,7 @@
         <div class = 'modal-content'>
           <div class = 'modal-body'>
             <div class = 'code-block code-html'>
-              <pre>
+              <pre class = 'prettyprint'>
                 &lt;div ng-app = 'app'&gt;
                   &nbsp;&lt;sk-pulse 
                   &nbsp;&nbsp;spin-radius = '30' 
@@ -205,7 +210,7 @@
             </div>
             <div class = 'code-block'>
               <div>
-                <code>angular.module('app', ['ngSpin.skPulse']);</code>
+                <code class = 'prettyprint'>angular.module('app', ['ngSpin.skPulse']);</code>
                 <div class = 'lang-label label label-default'>JS</div>
               </div>
             </div>
@@ -221,7 +226,7 @@
         <div class = 'modal-content'>
           <div class = 'modal-body'>
             <div class = 'code-block code-html'>
-              <pre>
+              <pre class = 'prettyprint'>
                 &lt;div ng-app = 'app'&gt;
                   &nbsp;&lt;sk-chase-dot 
                   &nbsp;&nbsp;spin-radius = '30' 
@@ -234,7 +239,7 @@
             </div>
             <div class = 'code-block'>
               <div>
-                <code>angular.module('app', ['ngSpin.skChaseDot']);</code>
+                <code class = 'prettyprint'>angular.module('app', ['ngSpin.skChaseDot']);</code>
                 <div class = 'lang-label label label-default'>JS</div>
               </div>
             </div>
@@ -250,7 +255,7 @@
         <div class = 'modal-content'>
           <div class = 'modal-body'>
             <div class = 'code-block code-html'>
-              <pre>
+              <pre class = 'prettyprint'>
                 &lt;div ng-app = 'app'&gt;
                   &nbsp;&lt;sk-t-bounce 
                   &nbsp;&nbsp;spin-radius = '10' 
@@ -264,7 +269,7 @@
             </div>
             <div class = 'code-block'>
               <div>
-                <code>angular.module('app', ['ngSpin.skTBounce']);</code>
+                <code class = 'prettyprint'>angular.module('app', ['ngSpin.skTBounce']);</code>
                 <div class = 'lang-label label label-default'>JS</div>
               </div>
             </div>
@@ -272,6 +277,34 @@
         </div>
       </div>
     </div>
-    <!-- / chasing dot -->
+    <!-- / three bounce -->
+
+    <!-- circle -->
+    <div class = 'modal fade' id = 'sk-circle-mdl' tabindex = '-1' role = 'dialog'>
+      <div class = 'modal-dialog' role = 'document'>
+        <div class = 'modal-content'>
+          <div class = 'modal-body'>
+            <div class = 'code-block code-html'>
+              <pre class = 'prettyprint'>
+                &lt;div ng-app = 'app'&gt;
+                  &nbsp;&lt;sk-circle
+                  &nbsp;&nbsp;spin-bound-radius = '25' 
+                  &nbsp;&nbsp;spin-color = 'ffffff'&gt;
+                  &nbsp;&lt;/sk-circle&gt;
+                &lt;/div&gt;
+              </pre>
+              <div class = 'lang-label label label-default'>HTML</div>
+            </div>
+            <div class = 'code-block'>
+              <div>
+                <code class = 'prettyprint'>angular.module('app', ['ngSpin.skCircle']);</code>
+                <div class = 'lang-label label label-default'>JS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / circle -->
   </body>
 </html>
