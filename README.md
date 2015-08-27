@@ -128,8 +128,8 @@
 
  Attributes | Type | Default | Description
  -----------|----------|---------|------------
- spin-bound-radius | Number | **70** px | Width of bounding box around the circle
- spin-color | Hex String | # **333** | Each circle color. **NOTICE : This value should be modified using CSS style. Find *.sk-spinner-circle .sk-circle:before* selector inside spinkit css style and change background-color style** 
+ spin-bound-radius | Number | **11** px | Bounding box radius
+ spin-color | Hex String | # **333** | Each circle color. **NOTICE : This value should be modified using CSS style. Find *.sk-spinner-circle .sk-circle:before* selector inside spinkit css style and change `background-color` attribute** 
 
 ### Example usage
 ```html
