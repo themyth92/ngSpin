@@ -8,6 +8,9 @@
     'ngSpin.skPulse',
     'ngSpin.skChaseDot',
     'ngSpin.skTBounce',
-    'ngSpin.skCircle'
+    'ngSpin.skCircle',
+    'ngSpin.skCubeGrid',
+    'ngSpin.skFadeCircle',
+    'ngSpin.skFoldCube'
   ]);
 })(angular);

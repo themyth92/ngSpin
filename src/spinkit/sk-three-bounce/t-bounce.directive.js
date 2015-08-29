@@ -5,10 +5,10 @@
       return {
         restrict : 'AE',
         replace : true,
-        template : ['<div class="sk-spinner sk-spinner-three-bounce">',
-                    '<div class="sk-bounce1"></div>',
-                    '<div class="sk-bounce2"></div>',
-                    '<div class="sk-bounce3"></div>',
+        template : ['<div class="sk-three-bounce">',
+                    '<div class="sk-bounce1 sk-child"></div>',
+                    '<div class="sk-bounce2 sk-child"></div>',
+                    '<div class="sk-bounce3 sk-child"></div>',
                     '</div>'].join(''),
         link : function link(scope, elem, attrs) {
           var boundWidth = attrs.spinBoundWidth || 70;
@@ -28,10 +28,8 @@
             'width' : radius*2 + 'px',
             'height' : radius*2 + 'px',
             'background-color' : '#' + color,
-            '-webkit-animation' : 'sk-threeBounceDelay ' + speed + 's infinite ease-in-out',
-            'animation' : 'sk-threeBounceDelay ' + speed + 's infinite ease-in-out',
-            '-webkit-animation-fill-mode' : 'both',
-            'animation-fill-mode' : 'both'
+            '-webkit-animation' : 'sk-three-bounce ' + speed + 's ease-in-out 0s infinite both',
+            'animation' : 'sk-three-bounce ' + speed + 's ease-in-out 0s infinite both'
           });
 
           bounce1Elem.css({

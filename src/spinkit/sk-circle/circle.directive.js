@@ -5,19 +5,19 @@
       return {
         restrict : 'AE',
         replace : true,
-        template : ['<div class="sk-spinner sk-spinner-circle">',
-                    '<div class="sk-circle1 sk-circle"></div>',
-                    '<div class="sk-circle2 sk-circle"></div>',
-                    '<div class="sk-circle3 sk-circle"></div>',
-                    '<div class="sk-circle4 sk-circle"></div>',
-                    '<div class="sk-circle5 sk-circle"></div>',
-                    '<div class="sk-circle6 sk-circle"></div>',
-                    '<div class="sk-circle7 sk-circle"></div>',
-                    '<div class="sk-circle8 sk-circle"></div>',
-                    '<div class="sk-circle9 sk-circle"></div>',
-                    '<div class="sk-circle10 sk-circle"></div>',
-                    '<div class="sk-circle11 sk-circle"></div>',
-                    '<div class="sk-circle12 sk-circle"></div>',
+        template : ['<div class="sk-circle">',
+                    '<div class="sk-circle1  sk-child"></div>',
+                    '<div class="sk-circle2  sk-child"></div>',
+                    '<div class="sk-circle3  sk-child"></div>',
+                    '<div class="sk-circle4  sk-child"></div>',
+                    '<div class="sk-circle5  sk-child"></div>',
+                    '<div class="sk-circle6  sk-child"></div>',
+                    '<div class="sk-circle7  sk-child"></div>',
+                    '<div class="sk-circle8  sk-child"></div>',
+                    '<div class="sk-circle9  sk-child"></div>',
+                    '<div class="sk-circle10  sk-child"></div>',
+                    '<div class="sk-circle11  sk-child"></div>',
+                    '<div class="sk-circle12  sk-child"></div>',
                     '</div>'].join(''),
         link : function link(scope, elem, attrs) {
           var color = attrs.spinColor;
@@ -33,7 +33,7 @@
           // color of the circle, we need to modify it, we need to add css rule to document
           // This is only a work around, user should change css style directly
           if(color) {
-            document.styleSheets[0].addRule('div.sk-spinner-circle .sk-circle:before','background-color: #' + color + ';');  
+            document.styleSheets[0].addRule('div.sk-circle .sk-child:before','background-color: #' + color + ';');  
           }
         } 
       };

@@ -5,9 +5,9 @@
       return {
         restrict : 'AE',
         replace : true,
-        template : ['<div class="sk-spinner sk-spinner-wandering-cubes">',
-                    '<div class="sk-cube1"></div>',
-                    '<div class="sk-cube2"></div>',
+        template : ['<div class="sk-wandering-cubes">',
+                    '<div class="sk-cube1 sk-cube"></div>',
+                    '<div class="sk-cube2 sk-cube"></div>',
                     '</div>'].join(''),
         link : function link(scope, elem, attrs) {
           var width = attrs.spinWidth || 10;

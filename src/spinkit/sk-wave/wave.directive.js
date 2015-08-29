@@ -5,12 +5,12 @@
       return {
         restrict : 'AE',
         replace : true,
-        template : ['<div class="sk-spinner sk-spinner-wave">',
-                    '<div class="sk-rect1"></div>',
-                    '<div class="sk-rect2"></div>',
-                    '<div class="sk-rect3"></div>',
-                    '<div class="sk-rect4"></div>',
-                    '<div class="sk-rect5"></div>',
+        template : ['<div class="sk-wave">',
+                    '<div class="sk-rect1 sk-rect"></div>',
+                    '<div class="sk-rect2 sk-rect"></div>',
+                    '<div class="sk-rect3 sk-rect"></div>',
+                    '<div class="sk-rect4 sk-rect"></div>',
+                    '<div class="sk-rect5 sk-rect"></div>',
                     '</div>'].join(''),
         link : function link(scope, elem, attrs) {
           

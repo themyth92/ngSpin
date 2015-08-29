@@ -15,7 +15,7 @@
     <link rel = 'stylesheet' href = '../libs/spinkit/spinkit.css'>
     <link rel = 'stylesheet' href = 'index.css'>
 
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script src  = 'https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js'></script>
     <script type = 'text/javascript' src = 'https://code.jquery.com/jquery-1.11.3.min.js'></script>
     <script type = 'text/javascript' src = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
     <script type = 'text/javascript' src = 'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js'></script>
@@ -27,6 +27,9 @@
     <script type = 'text/javascript' src = '../src/spinkit/sk-chasing-dot/chase-dot.directive.js'></script>
     <script type = 'text/javascript' src = '../src/spinkit/sk-three-bounce/t-bounce.directive.js'></script>
     <script type = 'text/javascript' src = '../src/spinkit/sk-circle/circle.directive.js'></script>
+    <script type = 'text/javascript' src = '../src/spinkit/sk-cube-grid/cube-grid.directive.js'></script>
+    <script type = 'text/javascript' src = '../src/spinkit/sk-fading-circle/fade-circle.directive.js'></script>
+    <script type = 'text/javascript' src = '../src/spinkit/sk-folding-cube/fold-cube.directive.js'></script>
     <script type = 'text/javascript' src = '../src/ng-spin.js'></script>
     <script type = 'text/javascript' src = 'index.js'></script>
   </head>
@@ -60,6 +63,17 @@
         </div>
         <div class = 'items' data-toggle = 'modal' data-target = '#sk-circle-mdl'>
           <sk-circle spin-bound-radius = '25' spin-color = 'ffffff'></sk-circle>
+        </div>
+      </div>
+      <div class = 'item-block'>
+        <div class = 'items' data-toggle = 'modal' data-target = '#sk-cube-grid-mdl'>
+          <sk-cube-grid spin-width = '60' spin-height = '60' spin-color = 'ffffff'></sk-cube-grid>
+        </div>
+        <div class = 'items' data-toggle = 'modal' data-target = '#sk-fade-circle-mdl'>
+          <sk-fade-circle spin-radius = '30' spin-color = 'ffffff'></sk-fade-circle>
+        </div>
+        <div class = 'items' data-toggle = 'modal' data-target = '#sk-fold-cube-mdl'>
+          <sk-fold-cube spin-color = 'ffffff'></sk-fold-cube>
         </div>
       </div>
     </div>
@@ -306,5 +320,89 @@
       </div>
     </div>
     <!-- / circle -->
+
+    <!-- cube grid -->
+    <div class = 'modal fade' id = 'sk-cube-grid-mdl' tabindex = '-1' role = 'dialog'>
+      <div class = 'modal-dialog' role = 'document'>
+        <div class = 'modal-content'>
+          <div class = 'modal-body'>
+            <div class = 'code-block code-html'>
+              <pre class = 'prettyprint'>
+                &lt;div ng-app = 'app'&gt;
+                  &nbsp;&lt;sk-cube-grid
+                  &nbsp;&nbsp;spin-width = '60'
+                  &nbsp;&nbsp;spin-height = '60' 
+                  &nbsp;&nbsp;spin-color = 'ffffff'&gt;
+                  &nbsp;&lt;/sk-cube-grid&gt;
+                &lt;/div&gt;
+              </pre>
+              <div class = 'lang-label label label-default'>HTML</div>
+            </div>
+            <div class = 'code-block'>
+              <div>
+                <code class = 'prettyprint'>angular.module('app', ['ngSpin.skCubeGrid']);</code>
+                <div class = 'lang-label label label-default'>JS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / cube grid -->
+
+    <!-- fade circle -->
+    <div class = 'modal fade' id = 'sk-fade-circle-mdl' tabindex = '-1' role = 'dialog'>
+      <div class = 'modal-dialog' role = 'document'>
+        <div class = 'modal-content'>
+          <div class = 'modal-body'>
+            <div class = 'code-block code-html'>
+              <pre class = 'prettyprint'>
+                &lt;div ng-app = 'app'&gt;
+                  &nbsp;&lt;sk-fade-circle
+                  &nbsp;&nbsp;spin-radius = '30'
+                  &nbsp;&nbsp;spin-color = 'ffffff'&gt;
+                  &nbsp;&lt;/sk-fade-circle&gt;
+                &lt;/div&gt;
+              </pre>
+              <div class = 'lang-label label label-default'>HTML</div>
+            </div>
+            <div class = 'code-block'>
+              <div>
+                <code class = 'prettyprint'>angular.module('app', ['ngSpin.skFadeCircle']);</code>
+                <div class = 'lang-label label label-default'>JS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / fade circle -->
+
+    <!-- fold cube -->
+    <div class = 'modal fade' id = 'sk-fold-cube-mdl' tabindex = '-1' role = 'dialog'>
+      <div class = 'modal-dialog' role = 'document'>
+        <div class = 'modal-content'>
+          <div class = 'modal-body'>
+            <div class = 'code-block code-html'>
+              <pre class = 'prettyprint'>
+                &lt;div ng-app = 'app'&gt;
+                  &nbsp;&lt;sk-fold-cube
+                  &nbsp;&nbsp;spin-color = 'ffffff'&gt;
+                  &nbsp;&lt;/sk-fold-cube&gt;
+                &lt;/div&gt;
+              </pre>
+              <div class = 'lang-label label label-default'>HTML</div>
+            </div>
+            <div class = 'code-block'>
+              <div>
+                <code class = 'prettyprint'>angular.module('app', ['ngSpin.skFoldCube']);</code>
+                <div class = 'lang-label label label-default'>JS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / fold cube -->
   </body>
 </html>

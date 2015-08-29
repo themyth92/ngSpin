@@ -39,29 +39,38 @@
 
 ### Directive list
  ```html
- <!-- spinkit rotating plane-->
- <sk-rot-plane></sk-rot-plane>
+  <!-- spinkit rotating plane-->
+  <sk-rot-plane></sk-rot-plane>
 
- <!-- spinkit double bouncing -->
- <sk-d-bounce</sk-d-bounce>
+  <!-- spinkit double bouncing -->
+  <sk-d-bounce</sk-d-bounce>
 	
- <!-- spinkit wave -->
- <sk-wave></sk-wave>
+  <!-- spinkit wave -->
+  <sk-wave></sk-wave>
 	
- <!-- spinkit wandering cube -->
- <sk-wand-cube></sk-wand-cube>
+  <!-- spinkit wandering cube -->
+  <sk-wand-cube></sk-wand-cube>
 
- <!-- spinkit pulse -->
- <sk-pulse></sk-pulse>
+  <!-- spinkit pulse -->
+  <sk-pulse></sk-pulse>
 
- <!-- spinkit chasing dot -->
- <sk-chase-dot></sk-chase-dot>
+  <!-- spinkit chasing dot -->
+  <sk-chase-dot></sk-chase-dot>
 
   <!-- spinkit three bounce -->
   <sk-t-bounce></sk-t-bounce>
 
   <!-- spinkit circle -->
   <sk-circle></sk-circle>
+
+  <!-- spinkit cube grid -->
+  <sk-cube-grid></sk-cube-grid>
+
+  <!-- spinkit fading circle -->
+  <sk-fade-circle></sk-fade-circle>
+
+  <!-- spinkit folding cube -->
+  <sk-fold-cube></sk-fold-cube>
 ```
 
 ### Optional attributes 
@@ -129,7 +138,28 @@
  Attributes | Type | Default | Description
  -----------|----------|---------|------------
  spin-bound-radius | Number | **11** px | Bounding box radius
- spin-color | Hex String | # **333** | Each circle color. **NOTICE : This value should be modified using CSS style. Find *.sk-spinner-circle .sk-circle:before* selector inside spinkit css style and change `background-color` attribute** 
+ spin-color | Hex String | # **333** | Each circle color. **NOTICE : this value should be changed using CSS style** 
+
+9. Spinkit cube grid
+
+ Attributes | Type | Default | Description
+ -----------|----------|---------|------------
+ spin-width | Number | **30** px | Bounding box width
+ spin-height | Number | **30** px | Bound box height
+ spin-color | Hex String | # **333** | Cube color
+
+10. Spinkit fade circle
+
+ Attributes | Type | Default | Description
+ -----------|----------|---------|------------
+ spin-radius | Number | **11** px | Bounding circle radius
+ spin-color | Hex String | # **333** | Circle color. **NOTICE : this value should be changed using CSS style**
+
+11. Spinkit folding cube
+
+ Attributes | Type | Default | Description
+ -----------|----------|---------|------------
+ spin-color | Hex String | # **333** | Cube color. **NOTICE : this value should be changed using CSS style**
 
 ### Example usage
 ```html

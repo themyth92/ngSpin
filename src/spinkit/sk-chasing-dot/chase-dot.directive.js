@@ -5,9 +5,9 @@
       return {
         restrict : 'AE',
         replace : true,
-        template : ['<div class="sk-spinner sk-spinner-chasing-dots">',
-                    '<div class="sk-dot1"></div>',
-                    '<div class="sk-dot2"></div>',
+        template : ['<div class="sk-chasing-dots">',
+                    '<div class="sk-child sk-dot1"></div>',
+                    '<div class="sk-child sk-dot2"></div>',
                     '</div>'].join(''),
         link : function link(scope, elem, attrs) {
           var radius = attrs.spinRadius || 20;

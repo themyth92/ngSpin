@@ -55,6 +55,18 @@
   background-color: #8e44ad;
 }
 
+.item-block:nth-child(3) .items:nth-child(1) {
+  background-color: #f1c40f;
+}
+
+.item-block:nth-child(3) .items:nth-child(2) {
+  background-color: #e67e22;
+}
+
+.item-block:nth-child(3) .items:nth-child(3) {
+  background-color: #e74c3c;
+}
+
 .wrapper .items div {
   display: inline-block;
 }
@@ -90,9 +102,8 @@ pre, code {
 /**
  * Fix spinkit problems
  */
-.sk-spinner.sk-spinner-wandering-cubes {
-  width : 60px;
-  height : 60px;
+.sk-fading-circle .sk-circle {
+  margin: 0 auto;
 }
 
 pre.prettyprint {

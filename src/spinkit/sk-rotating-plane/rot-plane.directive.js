@@ -5,7 +5,7 @@
       return {
         restrict : 'AE',
         replace : true,
-        template : '<div class="sk-spinner sk-spinner-rotating-plane"></div>',
+        template : '<div class="sk-rotating-plane"></div>',
         link : function link(scope, elem, attrs) {
           
           // get width, height and speed from user
